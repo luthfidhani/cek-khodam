@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Khodam</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-cover bg-center bg-fixed" style="background-image: url('tiger-background.jpg')">
+    <div class="min-h-screen flex flex-col items-center justify-center">
+        <div class="bg-white bg-opacity-75 backdrop-filter backdrop-blur-lg p-8 rounded-lg shadow-lg max-w-md w-full">
+            <h1 class="text-3xl font-bold text-center mb-6 text-gray-800">Cek Khodam Anda</h1>
+            <form id="khodamForm" class="flex flex-col items-center space-y-4">
+                <input type="text" id="name" placeholder="Nama Anda" class="p-3 border border-gray-300 rounded-md w-full max-w-sm focus:outline-none focus:border-blue-500" required>
+                <button type="submit" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline">Cek Khodam</button>
+            </form>
+            <p id="result" class="text-xl font-semibold mt-4 text-gray-800 text-center"></p>
+        </div>
+    </div>
+    <script src="khodam.js"></script>
+</body>
+</html>
